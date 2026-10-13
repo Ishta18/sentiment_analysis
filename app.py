@@ -1,8 +1,8 @@
 import streamlit as st
 import joblib
 
-model = joblib.load("sentiment_model.pkl")      
-vectorizer = joblib.load("tfidf_vectorizer.pkl") 
+model = joblib.load("best_random_forest_model.joblib")      
+vectorizer = joblib.load("tfidf_vectorizer.joblib") 
 
 st.title("📊 Sentiment Analysis App")
 st.write("Enter a review or text below to analyze its sentiment.")
